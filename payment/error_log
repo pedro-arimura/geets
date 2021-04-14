@@ -1,0 +1,19 @@
+[29-Sep-2020 04:21:59 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:21:59 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:22:02 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:22:02 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:22:07 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:22:07 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:23:09 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:23:10 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:23:11 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:23:11 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:27:39 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:27:39 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:34:21 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:34:21 UTC] {"message":"collector_id invalid","error":"invalid_collector_id","status":400,"cause":null}
+[29-Sep-2020 04:37:02 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:37:04 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:37:05 UTC] {"message":"invalid credentials","error":"invalid_client","status":400,"cause":[]}
+[29-Sep-2020 04:39:25 UTC] {"message":"User not active","error":"forbidden","status":403,"cause":[]}
+[29-Sep-2020 04:39:28 UTC] {"message":"User not active","error":"forbidden","status":403,"cause":[]}

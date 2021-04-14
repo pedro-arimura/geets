@@ -1,0 +1,798 @@
+body{
+    background: linear-gradient(239deg, #9279FA 0%, #00D1D5 100%);
+    font-family: mont-regular;
+    min-height: 100vh;
+}
+
+/*=== FORM DE REGISTRO ===*/
+
+.register{
+    border-radius: 2%;
+    height: 500px;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.mt-10{
+    margin-top: 5rem;
+}
+
+.link-card{
+    width: 25rem; 
+    height: 27rem;
+    border-radius: 2%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.link-card:hover{
+    box-shadow: 8px 8px 12px rgba(255, 255, 255, 0);
+}
+
+.card-text{
+    font-size: 2rem;
+    color: #12C6DA;
+}
+
+.responsive-cards-off-android{
+    display: none;
+}
+.responsive-cards-on-android{
+    display: block;
+}
+
+.form-popup {
+    margin-top: 5rem;
+}
+
+.form-popup p{
+    font-family: mont-bold;
+    src: url('../fonts/Mont-Bold.ttf');
+}
+
+.input-small{
+    font-size: 1.5rem;
+    padding: 20px 0 20px 10px;
+    margin-bottom: 3rem;
+}
+
+.input-big{
+    font-size: 1.5rem;
+    padding: 2rem 0 10rem 10px;
+    margin-bottom: 3rem;
+    resize: none;
+}
+
+.btn{
+    background: linear-gradient(127deg, #9279FA 0%, #00D1D5 100%);
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+.btn:hover{
+    color: #fff;
+    box-shadow: 0px 1px 20px #11C4D8;
+}
+
+.btn-back{
+    border: 1px solid #11C4D8;
+    color: #11C4D8;
+    background: none;
+    padding: 10px 0 10px 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+.btn-back:hover{
+    border: 1px solid #008B9A;
+    color: #008B9A;
+}
+
+.btn-close{
+    border: none;
+    position: absolute;
+    color: #12C6DA;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.content-register{
+    margin-top: 4rem;
+    width: 90%;
+}
+
+.content-register .input-register{
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.btn-prosseguir-register{
+    text-align: center;
+    background: linear-gradient(127deg, #9279FA 0%, #00D1D5 100%);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+}
+
+.bg-black {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    text-align: center;
+}
+
+.h1{
+    font-weight: bold;
+}
+
+.form-register{
+    min-height: 27rem;
+    border-radius: 20px;
+    width: 45%;
+    background-color: #ffff;
+}
+
+.form-register-login{
+    min-height: 27rem;
+    border-radius: 20px;
+    width: 30%;
+    background-color: #ffff;
+}
+
+.text-muted{
+    font-size: 1.5rem;
+}
+
+.form-group [type="file"] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form-group label{
+    font-size: 10rem;
+}
+
+.success-icon{
+    font-size: 15rem;
+    color: #12C6DA;
+}
+
+.tsize-2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/*=== FORM END ===*/
+
+/*=== LOGIN INÍCIO ===*/
+.form-group .input-label{
+    font-size: 1.6rem;
+    text-align: left;
+}
+.tab{
+    display: none;
+}
+/*=== LOGIN FIM ===*/
+
+/*=== STYLE.CSS ===*/
+
+/* Basic */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+	scroll-behavior:smooth;
+}
+button:focus,input:focus{
+    border: none !important;
+    outline: none !important;
+}
+a:focus{
+    outline: none !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+@font-face{
+    font-family: mont-bold;
+    src: url('../fonts/Mont-Bold.ttf');
+}
+@font-face{
+    font-family: mont-regular;
+    src: url('../fonts/Mont-Regular.ttf');
+}
+@font-face{
+    font-family: mont-light;
+    src: url('../fonts/Mont-Light.ttf');
+}
+/* ==================== Reuseable ==================== */
+.heading{
+    font-size: 4.6rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #2B263B;
+    font-family: mont-bold;
+}
+.custom-card{
+    background: #ffffff;
+    border-radius: 2.4rem;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    padding: 4rem 0;
+    -moz-box-shadow-bottom: 4px 4px 4px black;
+    -webkit-box-shadow-bottom: 4px 4px 4px black;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.1);
+}
+.custom-card:hover{
+    box-shadow: none;
+    transition: all.3s ease-in-out;
+    -webkit-transition: all.3s ease-in-out;
+    -moz-transition: all.3s ease-in-out;
+    -ms-transition: all.3s ease-in-out;
+    -o-transition: all.3s ease-in-out;
+}
+.card-text{
+    text-align: center;
+    color: #4F66E8;
+    font-size: 2.2rem;
+    font-family: mont-bold;
+}
+.sub-heading{
+    color: #2B263B;
+    font-size: 2.7rem;
+    font-family: mont-bold;
+}
+.para{
+    color: #2B263B;
+    font-size: 1.8rem;
+    font-family: mont-regular;
+}
+.primary-btn{
+    background: transparent linear-gradient(239deg, #9279FA 0%, #00D1D5 100%) 0% 0% no-repeat padding-box;
+    background-size: contain;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #ffffff;
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    font-family: mont-regular;
+}
+.primary-btn:hover{
+    color: #ffffff;
+}
+/* ==================== Start Header Section Here ==================== */
+#header-section{
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20rem;
+}
+.navbar-brand img{
+    margin-right: 8rem;
+}
+/* Fullscreen Navigation */
+.openNav{
+    color: #ffffff;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999999999999999999999999999999999999999999999999999999;
+  top: 0;
+  left: 0;
+  background-color: #42a9e6;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.overlay a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  margin: auto;
+  margin-top: 1rem;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: .5rem;
+  right: 2rem;
+  font-size: 4rem;
+}
+.active-page .nav-link{
+    color: #00D1D5;
+    position: relative;
+    font-family: mont-bold;
+}
+.active-page .nav-link::after{
+    position: absolute;
+    content: '';
+    display: block;
+    background: #00D1D5;
+    width: 1.6rem;
+    height: .4rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    margin-top: .3rem;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    margin-right: 2.5rem;
+    font-family: mont-regular;
+}
+.nav-link:hover{
+    color: #00D1D5;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+/* Navbar Button */
+.navbar-btn .btn-1{
+    color: #00D1D5;
+    font-size: 1.6rem;
+    background: #ffffff;
+    border: 1.5px solid #00D1D5;
+    border-radius: 2.8rem;
+    -webkit-border-radius: 2.8rem;
+    -moz-border-radius: 2.8rem;
+    -ms-border-radius: 2.8rem;
+    -o-border-radius: 2.8rem;
+    padding: .7rem 2.5rem;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    font-family: mont-regular;
+}
+.navbar-btn .btn-2{
+    color: #ffffff;
+    font-size: 1.6rem;
+    background: #00D1D5;
+    border: 1.5px solid #00D1D5;
+    border-radius: 2.8rem;
+    -webkit-border-radius: 2.8rem;
+    -moz-border-radius: 2.8rem;
+    -ms-border-radius: 2.8rem;
+    -o-border-radius: 2.8rem;
+    padding: .7rem 2.5rem;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    font-family: mont-regular;
+}
+.navbar-btn .btn-1:hover ,.navbar-btn .btn-2:hover{
+    color: #ffffff;
+    background: transparent !important;
+    border: 1.5px solid #00D1D5;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+.header-content{
+    padding-top: 10rem !important;
+}
+.header-content .heading{
+    color: #ffffff;
+    font-family: mont-light;
+}
+.header-content .heading span{
+    font-family: mont-bold;
+}
+/* ==================== Start Platform Section Here ==================== */
+#platform-section{
+    padding: 5rem 0 10rem 0;
+}
+/* ==================== Start Mask Group 2 Section Here ==================== */
+#mask-group-2{
+    background-image: url('../img/mask-grp-2-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 0;
+}
+/* ==================== Start Mask Group 3 Section Here ==================== */
+#mask-group-3{
+    padding: 5rem 0 10rem 0;
+}
+#mask-group-3 .primary-btn{
+    background: transparent linear-gradient(127deg, #9279FA 0%, #00D1D5 100%) 0% 0% no-repeat padding-box;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+/* ==================== Start Mask Group 4 Section Here ==================== */
+#mask-group-4{
+    padding: 5rem 0;
+}
+.mask-group-4-card{
+    padding: 1rem;
+}
+.mask-group-4-card:hover{
+    background: #ffffff;
+    border-radius: 2.4rem;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    -moz-box-shadow-bottom: 4px 4px 4px black;
+    -webkit-box-shadow-bottom: 4px 4px 4px black;
+    box-shadow: 8px 8px 12px rgba(0,0,0,0.1);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+#mask-group-4 .card-text{
+    color: #2B263B !important;
+}
+/* ==================== Start Mask Group 5 Section Here ==================== */
+#mask-group-5{
+    position: relative;
+    background-image: url('../img/mask-grp-5-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mask-group-5  .custom-card{
+    width: 30rem !important;
+    margin: auto;
+}
+#mask-group-5  .para{
+    font-size: 2rem;
+}
+.mask-group-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+/* ==================== Start Mask Group 6 Section Here ==================== */
+#mask-group-6{
+    padding: 10rem 0;
+}
+.accordion-box{
+    background: #E4FEFF;
+    padding: 1rem 2rem 3.5rem 2rem;
+    border-radius: 2.4rem;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    box-shadow: 0px 3px 30px #0000001C;
+}
+.accordion {
+    background-color: #BFFEFF;
+    color: #24272C;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.8rem;
+    transition: 1s ease-out;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    position: relative;
+    border-radius: 2.2rem !important;
+    -webkit-border-radius: 2.2rem !important;
+    -moz-border-radius: 2.2rem !important;
+    -ms-border-radius: 2.2rem !important;
+    -o-border-radius: 2.2rem !important;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+}
+.bold{
+    font-family: mont-bold;
+    font-weight: 600;
+}
+.accordion p{
+    width: 70% !important;
+    font-family: mont-regular;
+}
+.panel {
+  padding: 0 18px;
+  background-color: #BFFEFF;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin: 0;
+  font-size: 1.6rem;
+  color: #24272C;
+  border-bottom-left-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
+}
+.accordion:after {
+  content: '\276F';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 2rem;
+  color: #24272C;
+}
+.active{
+    border-radius: 0rem !important;
+    -webkit-border-radius: 0rem !important;
+    -moz-border-radius: 0rem !important;
+    -ms-border-radius: 0rem !important;
+    -o-border-radius: 0rem !important;
+    border-top-left-radius: 2.2rem !important;
+    border-top-right-radius: 2.2rem !important;
+    transition: 0s !important;
+    -webkit-transition: 0s !important;
+    -moz-transition: 0s !important;
+    -ms-transition: 0s !important;
+    -o-transition: 0s !important;
+}
+
+.helpful-btn a{
+    background: #ffffff;
+    color: #24272C;
+    border: 2px solid #24272C26;
+    border-radius: 45px;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    font-size: 1.4rem;
+    padding: .7rem 3rem;
+    margin-right: 1rem;
+}
+.helpful-btn a:focus{
+    background: #24272C;
+    color: #ffffff;
+}
+/* ==================== Start Footer Section Here ==================== */
+footer{
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20rem;
+}
+.footer-part-1{
+    padding-bottom: 2rem;
+}
+footer .sub-heading{
+    font-size: 3.5rem;
+    font-family: mont-bold;
+}
+.footer-sub-title{
+    font-size: 1.7rem;
+    color: #FFFFFFA6;
+    width: 83%;
+    font-family: mont-regular;
+}
+footer input{
+    border: none !important;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    font-family: mont-regular;
+}
+footer .footer-part-1 a{
+    border: none !important;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background: #00D1D5;
+    color: #ffffff;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    font-family: mont-regular;
+}
+footer .footer-part-1 a:hover{
+    background: #fff;
+    color: #00D1D5;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.footer-part-2{
+    padding: 6rem 0 4rem 0;
+    border-top: 1px solid #fff;
+}
+.footer-para{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: mont-regular;
+}
+.footer-social-icon i{
+    color: #ffff;
+    width: 2.7rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.footer-social-icon i:hover{
+    color: #9279FA;
+    background: #fff;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+.footer-sub-heading{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-family: mont-bold;
+}
+.footer-link p a,.footer-contact{
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: mont-regular;
+}
+.footer-link p a:hover{
+    border-bottom: 1px solid #fff;
+}
+.copyright{
+    border-top: 1px solid #8E8E8E;
+    padding: 2rem 0;
+}
+.footer-part-3{
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: mont-regular;
+}
+.right-border::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: #fff;
+    margin-left: 20px;
+    position: relative;
+    top: 6px;
+}
+
+/* Back to top */
+#myBtn {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #882dff;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 1.4rem;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+/*=== RESPONSIVIDADE DO FORM ===*/
+
+@media screen and (max-width:575px){
+
+    .form-register{
+        margin-top: -2rem;
+        width: 80%;
+        padding-bottom: 1.7rem;
+    }
+
+    .form-register-login{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:1025px){
+
+    .form-register{
+        width: 70%;
+        padding-bottom: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width: 285px){
+
+    .form-register{
+        width: 93%;
+        padding-bottom: 1.7rem;
+    }
+    
+
+}

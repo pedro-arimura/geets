@@ -1,0 +1,8 @@
+@media(min-width:768px){
+    .w-100-lg{
+        width: 100%!important;
+    }
+    .pt-lg-2{
+        padding-top: 0.5rem;
+    }
+}

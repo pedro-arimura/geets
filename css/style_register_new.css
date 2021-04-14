@@ -1,0 +1,161 @@
+body{
+    background: linear-gradient(90.51deg, #12C6DA 10.81%, #8680F7 93.83%);
+    font-family: mont-regular;
+}
+
+/*=== FORM DE REGISTRO ===*/
+
+.register{
+    border-radius: 2%;
+    height: 500px;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.mt-10{
+    margin-top: 5rem;
+}
+
+.link-card{
+    width: 25rem; 
+    height: 27rem;
+    border-radius: 2%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.link-card:hover{
+    box-shadow: 8px 8px 12px rgba(255, 255, 255, 0);
+}
+
+.card-text{
+    font-size: 2rem;
+    color: #12C6DA;
+}
+
+.form-popup {
+    width: 40rem; 
+    height: 35rem;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: #ffff;
+    z-index: 9;
+    text-align: center;
+    border-radius: 2%;
+    margin: 0 0 20rem 45rem;
+}
+
+.form-popup p{
+    font-family: mont-bold;
+    src: url('../fonts/Mont-Bold.ttf');
+}
+
+.input-small{
+    font-size: 1.5rem;
+    padding: 20px 0 20px 10px;
+}
+
+.input-big{
+    font-size: 1.5rem;
+    padding: 10px 0 20px 10px;
+}
+
+.btn{
+    background: linear-gradient(98.91deg, #11C4D8 16.44%, #8E69F8 111.99%);
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    color: #fff;
+    box-shadow: 0px 1px 20px #11C4D8;
+}
+
+.btn-back{
+    border: 1px solid #11C4D8;
+    color: #11C4D8;
+    background: none;
+    padding: 10px 0 10px 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.btn-back:hover{
+    border: 1px solid #008B9A;
+    color: #008B9A;
+}
+
+.btn-close{
+    border: none;
+    position: absolute;
+    color: #12C6DA;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.content-register{
+    margin-top: 4rem;
+}
+
+.bg-black {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    text-align: center;
+}
+
+.h1{
+    font-weight: bold;
+}
+
+.form-register{
+    min-height: 32rem;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.text-muted{
+    font-size: 1.5rem;
+}
+
+.form-group [type="file"] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.form-group label{
+    font-size: 10rem;
+}
+
+.user-file{
+    background: #12C6DA;
+    color: #ffff;
+    cursor: pointer;
+    width: 25%;
+}
+
+.success-icon{
+    font-size: 15rem;
+    color: #12C6DA;
+}
+
+.tsize-2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+/*=== FORM END ===*/
